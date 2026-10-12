@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mwangi Lewis Wanjihia — Actuarial Scientist & Full-Stack Developer</title>
+  <meta name="description"
+    content="Mwangi Lewis Wanjihia — Actuarial Science student and full-stack developer specialising in quantitative finance and high-performance backend systems. Nairobi, Kenya." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Home">{LM}</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="https://github.com/smilee254" target="_blank" rel="noopener" class="nav-gh" id="nav-github">
+        GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero" aria-labelledby="hero-heading">
+    <div class="hero-inner">
+
+      <div class="hero-text">
+        <p class="label" aria-label="Location">Nairobi, Kenya · UTC +03:00</p>
+        <h1 id="hero-heading">
+          Hi, I'm <em>Lewis.</em>
+        </h1>
+        <p class="hero-tagline">
+          An actuarial science student<br />
+          & full-stack developer.
+        </p>
+        <p class="hero-sub">
+          I see the world through many lenses, from mathematics to software, and use both to solve real problems, one
+          function at a time.
+          Currently focusing on improving the livelihood of the Kenyan informal sector.
+        </p>
+        <nav class="hero-cta" aria-label="Primary actions">
+          <a href="#projects" class="cta-link">See my work <span aria-hidden="true">↓</span></a>
+          <a href="#contact" class="cta-link cta-secondary">Get in touch <span aria-hidden="true">→</span></a>
+        </nav>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <p class="label">01 . About</p>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 id="about-heading">Find signal.<br />Eliminate noise.</h2>
+          <p>
+            Whether I'm modelling income risk for Nairobi's gig workers or backtesting alphas
+            for WorldQuant, the discipline is the same. The tools change. The rigour doesn't.
+          </p>
+          <p>
+            Long-exposure photography taught me to work with what I have,
+            expose longer, stack frames, wait for convergence. That same patience is
+            why I don't ship until the model holds under pressure.
+          </p>
+          <p>
+            Currently: Actuarial Science student, WorldQuant BRAIN researcher,
+            and building things at the intersection of insurance, data, and infrastructure.
+          </p>
+        </div>
+        <div class="about-gallery" aria-label="Photo gallery">
+          <figure class="photo-slot photo-1">
+            <img src="images/portrait.jpg" alt="Lewis portrait" class="real-img" />
+          </figure>
+          <figure class="photo-slot photo-2">
+            <img src="images/campus.jpg" alt="Lewis at campus" class="real-img" />
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <p class="label">02 . Projects</p>
+      <h2 id="projects-heading">Things I've built.</h2>
+
+      <!-- Featured -->
+      <article class="proj-featured" id="proj-idcs">
+        <div class="proj-meta">
+          <span class="proj-label">Parametric Insurtech · Python · FastAPI · Prophet · Gemini 2.5 Flash</span>
+          <span class="proj-year">2026</span>
+        </div>
+        <h3 class="proj-title-lg">IDCS — Income Deficiency<br />Compensation System</h3>
+        <p class="proj-desc">
+          An AI insurance engine for Kenyan gig workers. Ingests M-Pesa PDFs via Gemini Vision OCR,
+          runs a Prophet forecast calibrated to Kenyan public holidays and school-fee cycles,
+          then auto-triggers compensation when income falls below 80% of μ.
+          No claims adjuster. No paperwork.
+        </p>
+        <div class="proj-formula" aria-label="Core payout formula">
+          <code>payout = min(src_cap, (μ − income) × 0.70)</code>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/smilee254/IDCS-Income-Dip-Compensative-System" target="_blank" rel="noopener"
+            class="proj-link">GitHub ↗</a>
+          <span class="proj-star">★ 1</span>
+        </div>
+      </article>
+
+      <!-- Grid -->
+      <div class="proj-grid">
+
+        <article class="proj-card" id="proj-dip">
+          <div class="proj-meta">
+            <span class="proj-label">Python · Actuarial Library</span>
+            <span class="proj-year">2026</span>
+          </div>
+          <h3 class="proj-title">dip-compensator</h3>
+          <p class="proj-desc">Standalone actuarial engine extracted from IDCS. Portable income-dip detection and
+            compensation calculation — usable outside the full IDCS stack.</p>
+          <div class="proj-links">
+            <a href="https://github.com/smilee254/dip-compensator" target="_blank" rel="noopener"
+              class="proj-link">GitHub ↗</a>
+            <span class="proj-star">★ 1</span>
+          </div>
+        </article>
+
+        <article class="proj-card" id="proj-farehaven">
+          <div class="proj-meta">
+            <span class="proj-label">Python · FastAPI · HTML/CSS · Vercel</span>
+            <span class="proj-year">2026</span>
+          </div>
+          <h3 class="proj-title">Farehaven</h3>
+          <p class="proj-desc">Event planning platform for millennials. FastAPI backend, full Vercel deployment. Built
+            to help people find their way back to shared experiences.</p>
+          <div class="proj-links">
+            <a href="https://github.com/smilee254/Farehaven" target="_blank" rel="noopener" class="proj-link">GitHub
+              ↗</a>
+            <a href="https://farehaven.vercel.app" target="_blank" rel="noopener" class="proj-link">Live ↗</a>
+            <span class="proj-star">★ 2</span>
+          </div>
+        </article>
+
+        <article class="proj-card" id="proj-ttech">
+          <div class="proj-meta">
+            <span class="proj-label">HTML · CSS · JavaScript · Vercel</span>
+            <span class="proj-year">2026</span>
+          </div>
+          <h3 class="proj-title">T-tech</h3>
+          <p class="proj-desc">Online tech consultation platform for hardware and software problem resolution. Scoped,
+            built, and shipped solo. Live on Vercel.</p>
+          <div class="proj-links">
+            <a href="https://github.com/smilee254/T-tech" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+            <a href="https://t-tech-xi.vercel.app" target="_blank" rel="noopener" class="proj-link">Live ↗</a>
+            <span class="proj-star">★ 1</span>
+          </div>
+        </article>
+
+        <article class="proj-card" id="proj-emotions">
+          <div class="proj-meta">
+            <span class="proj-label">Python · AI · P2P</span>
+            <span class="proj-year">2026</span>
+          </div>
+          <h3 class="proj-title">e-motions</h3>
+          <p class="proj-desc">AI-assisted P2P platform designed to counter rising depression rates by lowering the
+            friction on human connection. Live on Vercel.</p>
+          <div class="proj-links">
+            <a href="https://github.com/smilee254/e-motions" target="_blank" rel="noopener" class="proj-link">GitHub
+              ↗</a>
+            <a href="https://e-motions-iota.vercel.app" target="_blank" rel="noopener" class="proj-link">Live ↗</a>
+            <span class="proj-star">★ 1</span>
+          </div>
+        </article>
+
+        <article class="proj-card" id="proj-tenthline">
+          <div class="proj-meta">
+            <span class="proj-label">Python · LegalTech · PDF · DOCX</span>
+            <span class="proj-year">2026</span>
+          </div>
+          <h3 class="proj-title">Tenth-line</h3>
+          <p class="proj-desc">Court-ready document line numbering for PDF &amp; DOCX. Detects every visual line
+            (including wrapped text) and stamps the margin at every 10th line — exactly as required by most court
+            filing rules.</p>
+          <div class="proj-links">
+            <a href="https://github.com/smilee254/Tenth-line" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+            <span class="proj-star">★ 0</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- In Progress -->
+      <div class="wip-block">
+        <p class="label">Currently in progress — not yet public</p>
+        <ul class="wip-list" role="list">
+          <li>
+            <span class="wip-name">IQC 2026 — WorldQuant BRAIN</span>
+            <span class="wip-desc">Alpha expression engineering for the International Quant Championship. Momentum
+              decay, cross-sectional normalisation, regime-aware signals.</span>
+          </li>
+          <li>
+            <span class="wip-name">LegalTech Case Management</span>
+            <span class="wip-desc">Digitising physical case records for Nairobi law firms. Full-text search,
+              matter-level indexing, FastAPI backend for low-bandwidth environments.</span>
+          </li>
+          <li>
+            <span class="wip-name">Income Data Pipeline</span>
+            <span class="wip-desc">Longitudinal data collection across 500+ subjects. Schema governance, cleaning logic,
+              aggregation pipelines feeding the actuarial models.</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <p class="label">03 . Skills</p>
+      <h2 id="skills-heading">Tools of the trade.</h2>
+      <dl class="skills-list">
+        <div class="skill-row">
+          <dt>Languages</dt>
+          <dd>Python · JavaScript · HTML/CSS · SQL</dd>
+        </div>
+        <div class="skill-row">
+          <dt>Backend</dt>
+          <dd>FastAPI · PostgreSQL · REST APIs · Streamlit</dd>
+        </div>
+        <div class="skill-row">
+          <dt>AI / ML</dt>
+          <dd>Gemini 2.5 Flash · Prophet · Time-series · WorldQuant BRAIN</dd>
+        </div>
+        <div class="skill-row">
+          <dt>Actuarial</dt>
+          <dd>Income Risk Modelling · Parametric Insurance · Statistical Forecasting</dd>
+        </div>
+        <div class="skill-row">
+          <dt>DevOps</dt>
+          <dd>Git/GitHub · Vercel · Docker · Linux</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <p class="label">04 . Contact</p>
+      <h2 id="contact-heading">Let's build something.</h2>
+      <p class="contact-sub">
+        Open to interesting problems — especially in fintech, insurtech,
+        quantitative research, and high-performance backend systems.
+      </p>
+      <div class="social-grid">
+        <a href="mailto:mwanglewis6@gmail.com" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="social-icon">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          mwanglewis6@gmail.com
+        </a>
+        <a href="https://github.com/smilee254" target="_blank" rel="noopener" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="social-icon">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg>
+          smilee254
+        </a>
+        <a href="https://www.linkedin.com/in/lewis-mwangi-a162532b9/" target="_blank" rel="noopener" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="social-icon">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://www.instagram.com/smi_lee254/" target="_blank" rel="noopener" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="social-icon">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          @smi_lee254
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Mwangi Lewis Wanjihia · Nairobi, Kenya</span>
+      <a href="https://github.com/smilee254" target="_blank" rel="noopener">github.com/smilee254</a>
+    </div>
+  </footer>
+
+  <!-- ═══ MWALI — MASCOT (aria-hidden, purely decorative) ═══ -->
+  <div id="mwali-wrap" aria-hidden="true">
+    <div id="mwali-caption"></div>
+    <svg id="mwali-svg" viewBox="0 0 130 210" width="105" height="170" xmlns="http://www.w3.org/2000/svg"
+      role="presentation">
+
+      <!-- Antenna -->
+      <line x1="65" y1="4" x2="65" y2="26" stroke="#C4994A" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="65" cy="4" r="5" fill="#C4994A" />
+      <line x1="57" y1="10" x2="73" y2="10" stroke="#C4994A" stroke-width="1.5" stroke-linecap="round" />
+
+      <!-- Exclamation (visible in point poses) -->
+      <g id="ml-exclaim">
+        <text x="93" y="22" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#C4994A">!</text>
+      </g>
+
+      <!-- HEAD GROUP -->
+      <g id="ml-head-g">
+        <ellipse cx="65" cy="58" rx="36" ry="38" fill="#251E1A" stroke="#332820" stroke-width="1.5" />
+        <circle cx="30" cy="55" r="7" fill="#332820" stroke="#3D2E23" stroke-width="1" />
+        <circle cx="100" cy="55" r="7" fill="#332820" stroke="#3D2E23" stroke-width="1" />
+        <rect x="37" y="38" width="56" height="44" rx="12" fill="#0E0B08" stroke="#3D2E23" stroke-width="1" />
+        <!-- Eyes -->
+        <g id="ml-eyes">
+          <circle cx="52" cy="60" r="9" fill="#1A1208" />
+          <circle cx="78" cy="60" r="9" fill="#1A1208" />
+          <circle cx="52" cy="60" r="6" fill="#C4994A" />
+          <circle cx="78" cy="60" r="6" fill="#C4994A" />
+          <circle cx="54" cy="58" r="2.2" fill="#0E0B08" />
+          <circle cx="80" cy="58" r="2.2" fill="#0E0B08" />
+          <circle cx="55" cy="56" r="1.4" fill="rgba(255,255,255,0.45)" />
+          <circle cx="81" cy="56" r="1.4" fill="rgba(255,255,255,0.45)" />
+        </g>
+        <!-- Mouth -->
+        <path d="M52 74 Q65 80 78 74" stroke="#C4994A" stroke-width="1.5" fill="none" stroke-linecap="round"
+          opacity=".6" />
+      </g>
+
+      <!-- Neck -->
+      <rect x="55" y="93" width="20" height="11" rx="5" fill="#1C1714" stroke="#332820" stroke-width="1" />
+
+      <!-- BODY GROUP -->
+      <g id="ml-body-g">
+        <rect x="28" y="102" width="74" height="62" rx="14" fill="#251E1A" stroke="#332820" stroke-width="1.5" />
+        <rect x="44" y="115" width="42" height="28" rx="7" fill="#1C1714" stroke="#332820" stroke-width="1" />
+        <text x="65" y="134" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#C4994A"
+          font-style="italic">λ</text>
+        <line x1="33" y1="120" x2="33" y2="130" stroke="#332820" stroke-width="1.5" stroke-linecap="round" />
+        <line x1="33" y1="134" x2="33" y2="144" stroke="#332820" stroke-width="1.5" stroke-linecap="round" />
+        <line x1="97" y1="120" x2="97" y2="130" stroke="#332820" stroke-width="1.5" stroke-linecap="round" />
+        <line x1="97" y1="134" x2="97" y2="144" stroke="#332820" stroke-width="1.5" stroke-linecap="round" />
+
+        <!-- LEFT ARM -->
+        <g id="ml-arm-l">
+          <rect x="8" y="104" width="22" height="44" rx="11" fill="#251E1A" stroke="#332820" stroke-width="1.5" />
+          <circle cx="19" cy="152" r="9" fill="#332820" stroke="#3D2E23" stroke-width="1" />
+          <circle cx="19" cy="152" r="4" fill="#251E1A" />
+        </g>
+
+        <!-- RIGHT ARM -->
+        <g id="ml-arm-r">
+          <rect x="100" y="104" width="22" height="44" rx="11" fill="#251E1A" stroke="#332820" stroke-width="1.5" />
+          <circle cx="111" cy="152" r="9" fill="#332820" stroke="#3D2E23" stroke-width="1" />
+          <circle cx="111" cy="152" r="4" fill="#251E1A" />
+        </g>
+
+        <!-- Left leg -->
+        <rect x="36" y="162" width="22" height="34" rx="11" fill="#251E1A" stroke="#332820" stroke-width="1.5" />
+        <ellipse cx="44" cy="198" rx="17" ry="9" fill="#332820" />
+        <ellipse cx="44" cy="197" rx="11" ry="5" fill="#2A2018" />
+
+        <!-- Right leg -->
+        <rect x="72" y="162" width="22" height="34" rx="11" fill="#251E1A" stroke="#332820" stroke-width="1.5" />
+        <ellipse cx="83" cy="198" rx="17" ry="9" fill="#332820" />
+        <ellipse cx="83" cy="197" rx="11" ry="5" fill="#2A2018" />
+      </g>
+
+    </svg>
+  </div>
+
+  <!-- ═══ MINI MWALI — project hover tooltip ═══ -->
+  <div id="mwali-mini-wrap" aria-hidden="true">
+    <div id="mwali-mini-bubble"></div>
+    <svg id="mwali-mini-svg" viewBox="0 0 130 210" width="52" height="84"
+         xmlns="http://www.w3.org/2000/svg" role="presentation">
+      <!-- Antenna -->
+      <line x1="65" y1="4" x2="65" y2="26" stroke="#C4994A" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="65" cy="4" r="5" fill="#C4994A"/>
+      <line x1="57" y1="10" x2="73" y2="10" stroke="#C4994A" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Head -->
+      <g id="mwali-mini-head">
+        <ellipse cx="65" cy="58" rx="36" ry="38" fill="#251E1A" stroke="#332820" stroke-width="1.5"/>
+        <circle cx="30" cy="55" r="7" fill="#332820" stroke="#3D2E23" stroke-width="1"/>
+        <circle cx="100" cy="55" r="7" fill="#332820" stroke="#3D2E23" stroke-width="1"/>
+        <rect x="37" y="38" width="56" height="44" rx="12" fill="#0E0B08" stroke="#3D2E23" stroke-width="1"/>
+        <!-- Eyes -->
+        <circle cx="52" cy="60" r="9" fill="#1A1208"/>
+        <circle cx="78" cy="60" r="9" fill="#1A1208"/>
+        <circle cx="52" cy="60" r="6" fill="#C4994A"/>
+        <circle cx="78" cy="60" r="6" fill="#C4994A"/>
+        <circle cx="54" cy="58" r="2.2" fill="#0E0B08"/>
+        <circle cx="80" cy="58" r="2.2" fill="#0E0B08"/>
+        <circle cx="55" cy="56" r="1.4" fill="rgba(255,255,255,0.45)"/>
+        <circle cx="81" cy="56" r="1.4" fill="rgba(255,255,255,0.45)"/>
+        <!-- Smile -->
+        <path d="M52 74 Q65 80 78 74" stroke="#C4994A" stroke-width="1.5" fill="none" stroke-linecap="round" opacity=".6"/>
+      </g>
+      <!-- Neck -->
+      <rect x="55" y="93" width="20" height="11" rx="5" fill="#1C1714" stroke="#332820" stroke-width="1"/>
+      <!-- Body -->
+      <g id="mwali-mini-body">
+        <rect x="28" y="102" width="74" height="62" rx="14" fill="#251E1A" stroke="#332820" stroke-width="1.5"/>
+        <rect x="44" y="115" width="42" height="28" rx="7" fill="#1C1714" stroke="#332820" stroke-width="1"/>
+        <text x="65" y="134" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#C4994A" font-style="italic">λ</text>
+        <!-- Left arm -->
+        <g id="mwali-mini-arm-l">
+          <rect x="8" y="104" width="22" height="44" rx="11" fill="#251E1A" stroke="#332820" stroke-width="1.5"/>
+          <circle cx="19" cy="152" r="9" fill="#332820" stroke="#3D2E23" stroke-width="1"/>
+          <circle cx="19" cy="152" r="4" fill="#251E1A"/>
+        </g>
+        <!-- Right arm -->
+        <g id="mwali-mini-arm-r">
+          <rect x="100" y="104" width="22" height="44" rx="11" fill="#251E1A" stroke="#332820" stroke-width="1.5"/>
+          <circle cx="111" cy="152" r="9" fill="#332820" stroke="#3D2E23" stroke-width="1"/>
+          <circle cx="111" cy="152" r="4" fill="#251E1A"/>
+        </g>
+        <!-- Left leg -->
+        <rect x="36" y="162" width="22" height="34" rx="11" fill="#251E1A" stroke="#332820" stroke-width="1.5"/>
+        <ellipse cx="44" cy="198" rx="17" ry="9" fill="#332820"/>
+        <!-- Right leg -->
+        <rect x="72" y="162" width="22" height="34" rx="11" fill="#251E1A" stroke="#332820" stroke-width="1.5"/>
+        <ellipse cx="83" cy="198" rx="17" ry="9" fill="#332820"/>
+      </g>
+    </svg>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
