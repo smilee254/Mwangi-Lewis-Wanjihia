@@ -55,7 +55,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Focus ring — visible, on-brand */
+/* Focus ring   visible, on-brand */
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
@@ -305,7 +305,7 @@ section h2 {
 
 /* --- PROJECTS --- */
 
-/* Featured project — full width, no card */
+/* Featured project   full width, no card */
 .proj-featured {
   margin-bottom: var(--s8);
   padding-bottom: var(--s8);
@@ -387,7 +387,7 @@ section h2 {
   margin-left: auto;
 }
 
-/* Grid — no card styling, left accent border only */
+/* Grid   no card styling, left accent border only */
 .proj-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -569,7 +569,7 @@ section h2 {
 }
 
 /* ══════════════════════════════════════
-   MWALI — MASCOT
+   MWALI   MASCOT
 ══════════════════════════════════════ */
 #mwali-wrap {
   position: fixed;
@@ -610,7 +610,7 @@ section h2 {
 /* SVG cursor */
 #mwali-svg { cursor: pointer; display: block; }
 
-/* Animated parts — spring cubic-bezier for bounce feel */
+/* Animated parts   spring cubic-bezier for bounce feel */
 #ml-arm-l, #ml-arm-r {
   transform-box: fill-box;
   transform-origin: 50% 0%;
@@ -637,24 +637,24 @@ section h2 {
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-/* POSE — point right (arm up on right side) */
+/* POSE   point right (arm up on right side) */
 #mwali-wrap.mwali-pr #ml-arm-r { transform: rotate(-118deg); }
 #mwali-wrap.mwali-pr #ml-body-g { transform: rotate(5deg); }
 #mwali-wrap.mwali-pr #ml-head-g { transform: rotate(-4deg); }
 #mwali-wrap.mwali-pr #ml-exclaim { opacity: 1; transform: translateY(0); }
 
-/* POSE — point left (arm up on left side) */
+/* POSE   point left (arm up on left side) */
 #mwali-wrap.mwali-pl #ml-arm-l { transform: rotate(118deg); }
 #mwali-wrap.mwali-pl #ml-body-g { transform: rotate(-5deg); }
 #mwali-wrap.mwali-pl #ml-head-g { transform: rotate(4deg); }
 #mwali-wrap.mwali-pl #ml-exclaim { opacity: 1; transform: translateY(0); }
 
-/* POSE — excited (hover) */
+/* POSE   excited (hover) */
 #mwali-wrap.mwali-excited #ml-arm-l { transform: rotate(32deg); }
 #mwali-wrap.mwali-excited #ml-arm-r { transform: rotate(-32deg); }
 #mwali-wrap.mwali-excited #ml-body-g { transform: scaleY(1.04); }
 
-/* POSE — wave (click) */
+/* POSE   wave (click) */
 #mwali-wrap.mwali-wave #ml-arm-r { transform: rotate(-78deg); }
 
 /* Mirror for left-side appearances */
@@ -666,7 +666,7 @@ section h2 {
   #mwali-wrap { display: none; }
 }
 
-/* Reduced motion — instant pose swap, no travel */
+/* Reduced motion   instant pose swap, no travel */
 @media (prefers-reduced-motion: reduce) {
   #ml-arm-l, #ml-arm-r, #ml-body-g, #ml-head-g, #ml-eyes, #ml-exclaim {
     transition: none;
@@ -676,7 +676,7 @@ section h2 {
 
 
 /* ═══════════════════════════════════════
-   MINI MWALI — PROJECT HOVER TOOLTIP
+   MINI MWALI   PROJECT HOVER TOOLTIP
    ═══════════════════════════════════════ */
 #mwali-mini-wrap {
   position: fixed;

@@ -66,7 +66,7 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 })();
 
 // ═══════════════════════════════════════
-// MWALI — MASCOT
+// MWALI   MASCOT
 // ═══════════════════════════════════════
 (function initMwali() {
   const wrap    = document.getElementById('mwali-wrap');
@@ -79,7 +79,7 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
   const SECTIONS = [
     { id: 'hero',     side: 'right', pose: 'mwali-pr', text: "oh! it's beginning. this is my favorite part." },
     { id: 'about',    side: 'left',  pose: 'mwali-pl', text: "signal. noise. long exposures. this person gets it." },
-    { id: 'projects', side: 'right', pose: 'mwali-pr', text: "wait — okay look at this. an insurance engine with NO adjuster." },
+    { id: 'projects', side: 'right', pose: 'mwali-pr', text: "wait   okay look at this. an insurance engine with NO adjuster." },
     { id: 'skills',   side: 'left',  pose: 'mwali-pl', text: "Prophet! FastAPI! WorldQuant BRAIN! all of them!" },
     { id: 'contact',  side: 'right', pose: 'mwali-pr', text: "you should probably reach out. i'm just saying." },
   ];
@@ -179,7 +179,7 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 
   tick();
 
-  // Hover — excited pose
+  // Hover   excited pose
   svg.addEventListener('mouseenter', () => {
     if (!activeSection) return;
     clearPoses();
@@ -191,7 +191,7 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
     wrap.classList.add(activeSection.pose);
   });
 
-  // Click — wave once
+  // Click   wave once
   svg.addEventListener('click', () => {
     if (clickLock || !activeSection) return;
     clickLock = true;
@@ -204,7 +204,7 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
     }, 650);
   });
 
-  // Eye tracking — follows cursor subtly
+  // Eye tracking   follows cursor subtly
   if (!prefersReducedMotion && eyes) {
     document.addEventListener('mousemove', (e) => {
       const r  = svg.getBoundingClientRect();
@@ -220,7 +220,7 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 })();
 
 // ═══════════════════════════════════════
-// MINI MWALI — PROJECT HOVER TOOLTIPS
+// MINI MWALI   PROJECT HOVER TOOLTIPS
 // ═══════════════════════════════════════
 (function initMiniMwali() {
   const wrap   = document.getElementById('mwali-mini-wrap');
